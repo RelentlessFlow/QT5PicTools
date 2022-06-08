@@ -1,0 +1,7 @@
+我把腾讯云那个库给改了，在cos.py的82行那个 rs = self.__client.put_object(
+
+把put_object这个方法改了，我把cos_client.py这个库的put_object方法的返回值，也就是378行，由
+ return response改为了 return response,url。
+
+如果不该这个库，程序应该运行不了。
+打包后的程序不影响。
